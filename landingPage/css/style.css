@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.onlineCateringContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.onlineCateringDetails .onlineCateringHeader {
+    width: 200px;
+    height: 27px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.onlineCateringDetails .onlineCateringSubHeader {
+    width: 425px;
+    line-height: 36px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.onlineCateringDetails .onlineCateringParagraph {
+    width: 428px;
+    height: 48px;
+    margin-top: 20px;
+
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.onlineCateringDetails .onlineCateringButton {
+
+    background-color: #FFCA13;
+    border: none;
+    text-decoration: none;
+    padding: 10px 22px;
+    text-align: center;
+}
+
+.onlineCateringDetails .onlineCateringLastParagraph {
+    margin-top: 110px;
+    width: 444px;
+    height: 42px;
+    padding: 17px;
+
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+
+    color: #181818;
+
+    background-color: #FFCA13;
+    
+
+
+}
+
+.onlineCateringIcons {
+    display: inline-block;
+}
+
+.onlineCateringIcons img {
+    padding-right: 20px;
+}
+.onlineCateringDetails {
+    margin-left:96px ;
+    padding: 50px;
+}
+.onlineCateringImg img {
+    width: 512px;
+    height: 500px;
+}
+
+.tastyMealsHeader, .mostOrderedMenuHeader{
+    text-align: center;
+}
+
+.tastyMeals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tastyMeals div .tastyMealsDetails {
+    width: 500px;
+    height: 168px;
+    margin-left: 81px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mostOrderedMenu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mostOrderedMenuCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 232px;
+    height: 118px;
+    
+}
+
+.mostOrderedMenuCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.mostOrderedMenuContainer {
+    
+    padding: 2px 16px 2px 16px;
+    background-color: #FFCA13;
+}
+
+.mostOrderedMenuCard img {
+    display: block;
+    border-radius: 5px 5px 0 0;
+    
+}
