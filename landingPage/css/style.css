@@ -60,7 +60,7 @@ header figure {
 
 header nav {
     
-    min-width: 220px;
+    max-width: 220px;
     width: 40%;
     margin-right: 80px;
 }
@@ -161,6 +161,29 @@ header img {
     height: 500px;
 }
 
+@media (max-width: 700px) { 
+    .onlineCateringContainer {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .onlineCateringDetails {
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .onlineCateringImg img {
+        width: 375px;
+        height: 209px;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+ }
+
 .tastyMealsHeader, .mostOrderedMenuHeader, .servicesWeProvideHeader, .whyChooseUsHeader, .formWrapperHeader {
     text-align: center;
 }
@@ -183,6 +206,19 @@ header img {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+}
+
+@media (max-width: 700px) {
+    .tastyMeals{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tastyMeals img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .mostOrderedMenu {
@@ -243,6 +279,18 @@ header img {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+}
+
+@media (max-width: 700px) {
+    .servicesWeProvide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicesWeProvideParagraph {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .whyChooseUs {
@@ -336,4 +384,22 @@ footer ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+/* fOOTER AND HEADER */
+@media (max-width: 700px) {
+    html {
+        font-size: 12px;
+    }
+
+
+    #hamburger {
+        display: block;
+    }
+
+
+    .hide {
+        display: none;
+    }
+
 }
