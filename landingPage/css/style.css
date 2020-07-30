@@ -80,7 +80,7 @@ body {
     height: 500px;
 }
 
-.tastyMealsHeader, .mostOrderedMenuHeader{
+.tastyMealsHeader, .mostOrderedMenuHeader, .servicesWeProvideHeader{
     text-align: center;
 }
 
@@ -128,4 +128,34 @@ body {
     display: block;
     border-radius: 5px 5px 0 0;
     
+}
+
+.servicesWeProvideHeader {
+    margin-top: 180px;
+    
+}
+
+.servicesWeProvide {
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.servicesWeProvide .servicesWeProvideImg {
+    position: absolute;
+    z-index: -1;
+}
+
+.servicesWeProvide .servicesWeProvideImg2 {
+    margin-left: 140px;
+    margin-top: 100px;
+}
+
+.servicesWeProvide div .servicesWeProvideParagraph {
+    width: 340px;
+    height: 192px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
