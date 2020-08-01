@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=" stylesheet" href='style.css'>
+    <link rel='stylesheet' href='public/style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div id="header-div" class="flex">
+            <figure class="flex">
+                <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png" alt="Logo">
+                <figcaption>Foodies First</figcaption>
+            </figure>
+            <nav class="hide">
+                <ul class="flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <a id="login" class="hide bold" href="../login/login.html">Login</a>
+            <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png" alt="">
+        </div>
+    </header>
+    <!-- Main content -->
+    <main>
+        <nav id="hamburger-section" class="bold">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    <section class='sub-navmenu'>
+       <div class="container">
+           Menus
+       </div>
+    </section>
+    <section  class='menuItems'>
+    <div class=" container"> 
+        <p class='pt-4' > Breakfast</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class='col-md-9'>
+                  <div class="row">
+                    <div class="col-md-4 mt-4 mb-4">
+                        <div class="menuCard card ">
+                            <img src="1.png" class=" menuImage" alt="Pancake and eggs">
+                            <div class="menuCardBody">
+                                <div class='card-text ml-3'> Pancake and eggs </div>
+                                <div class="card-body menuCardBody2">
+                                    Delicious pancakes and eggs 
+                                </div>
+                                <div class="menuCardFooter mt-3">
+                                    <div><p>500 Naria</p></div>
+                                    <div> <button  data-toggle="modal" data-target="#exampleModal1"> ADD TO CART </button></div>
+                                </div>
+                            </div>
+                       
+                          </div>
+                    </div>
+                    <!-- Modal 1 -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content menuCardModal">
+                <button type="button" class="close text-right" style='color: black; text-shadow: 2px 2px 4px grey ; ' data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            <div class="menuCard card ">
+                <img src="1.png" class=" menuImage2" alt="Pancake and eggs ">
+                <div class="menuCardBody2">
+                    <div class='card-text text-center'>  Pancake and eggs  </div>
+                    <div class="card-body menuCardBody3">
+                        Delicious pancakes and eggs 
+                    </div>
+                    <div class="menuCardFooter2 mt-3">
+                        <div>
+                            <p class="text-center count">
+
+                            </p>
+                         </div>
+                        <div> <button  class='addToCart'> Add To Cart </button></div>
+                    </div>
+                </div>
+        
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
+                    <div class="col-md-4 mt-4 mb-4">
+                        <div class="menuCard card ">
+                            <img src="2.png" class=" menuImage" alt="Boiled yam and egg sauce ">
+                            <div class="menuCardBody">
+                                <div class='card-text ml-3'> Boiled yam and egg sauce </div>
+                                <div class="card-body menuCardBody2">
+                                    Order delicious boiled yam with egg sauce.
+                                </div>
+                                <div class="menuCardFooter mt-3">
+                                    <div><p>1000 Naria</p></div>
+                                    <div> <button  data-toggle="modal" data-target="#exampleModal2" > ADD TO CART </button></div>
+                                </div>
+                            </div>
+                       
+                          </div>
+                    </div>
+
+                    <!-- modal2 -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content menuCardModal">
+                                <button type="button" class="close text-right" style='color: black; text-shadow: 2px 2px 4px grey ; ' data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            <div class="menuCard card ">
+                                <img src="2.png" class=" menuImage2" alt=" Boiled yam and egg sauce  ">
+                                <div class="menuCardBody2">
+                                    <div class='card-text text-center'> Boiled yam and egg sauce   </div>
+                                    <div class="card-body menuCardBody3">
+                                        Order delicious boiled yam with egg sauce.
+                                    </div>
+                                    <div class="menuCardFooter2 mt-3">
+                                        <div>
+                                            <p class="text-center count">
+
+                                            </p>
+                                         </div>
+                                        <div> <button class='addToCart'>Add To Cart </button></div>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                
+
+                    <div class="col-md-4 mt-4 mb-4">
+                        <div class="menuCard card ">
+                            <img src="4.png" class=" menuImage" alt="Crispy Chicken and Friies">
+                            <div class="menuCardBody">
+                                <div class='card-text ml-3'>  Crispy Chicken and Fries </div>
+                                <div class="card-body menuCardBody2">
+                                    Order Fries and  grilled chicken.
+                                </div>
+                                <div class="menuCardFooter mt-3">
+                                    <div><p>1000 Naria</p></div>
+                                    <div> <button data-toggle="modal" data-target="#exampleModal3"> ADD TO CART </button></div>
+                                </div>
+                            </div>
+                       
+                          </div>
+                    </div>
+
+                          <!-- modal3 -->
+                          <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content menuCardModal">
+                                    <button type="button" class="close text-right" style='color: black; text-shadow: 2px 2px 4px grey ; ' data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                <div class="menuCard card ">
+                                    <img src="4.png" class=" menuImage2" alt=" Crispy Chicken and Fries ">
+                                    <div class="menuCardBody2">
+                                        <div class='card-text text-center'> Crispy Chicken and Fries   </div>
+                                        <div class="card-body menuCardBody3">
+                                            Order Fries and  grilled chicken.
+                                        </div>
+                                        <div class="menuCardFooter2 mt-3">
+                                            <div>
+                                                <p class="text-center count">
+ 
+                                                </p>
+                                             </div>
+                                            <div> <button  class='addToCart'>Add To Cart </button></div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                 
+                  </div>
+                  <div class=" container"> 
+                    <p class='pt-4' > Lunch </p>
+                </div>
+                  <div class="row">
+                    <div class="col-md-4 mt-4 mb-4">
+                        <div class="menuCard card ">
+                            <img src="5.png" class=" menuImage" alt="Jollof rice and chicken">
+                            <div class="menuCardBody">
+                                <div class='card-text ml-3'>      Jollof rice and chicken </div>
+                                <div class="card-body menuCardBody2">
+                                    Delicious delicacies of
+                                    jollof rice and chicken
+                                </div>
+                                <div class="menuCardFooter mt-3">
+                                    <div><p>1200 Naria</p></div>
+                                    <div> <button data-toggle="modal" data-target="#exampleModal4"  >  ADD TO CART </button></div>
+                                </div>
+                            </div>
+                       
+                          </div>
+                    </div>
+
+                           <!-- modal4 -->
+                           <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content menuCardModal">
+                                    <button type="button" class="close text-right" style='color: black; text-shadow: 2px 2px 4px grey ; ' data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                <div class="menuCard card ">
+                                    <img src="4.png" class=" menuImage2" alt=" Jollof rice and chicken ">
+                                    <div class="menuCardBody2">
+                                        <div class='card-text text-center'> Jollof rice and chicken   </div>
+                                        <div class="card-body menuCardBody3">
+                                            Delicious delicacies of
+                                            jollof rice and chicken
+                                        </div>
+                                        <div class="menuCardFooter2 mt-3">
+                                            <div>
+                                                <p class="text-center count">
+ 
+                                                </p>
+                                             </div>
+                                            <div> <button  class='addToCart'>Add To Cart </button></div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                    
+
+                    <div class="col-md-4 mt-4 mb-4">
+                        <div class="menuCard card ">
+                            <img src="6.png" class=" menuImage" alt="Eforiro">
+                            <div class="menuCardBody">
+                                <div class='card-text ml-3'> Eforiro </div>
+                                <div class="card-body menuCardBody2">
+                                    Delicious Traditional food Eforiro.
+                                </div>
+                                <div class="menuCardFooter mt-3">
+                                    <div><p> 600 Naria</p></div>
+                                    <div> <button data-toggle="modal" data-target="#exampleModal5" class='addToCart' > ADD TO CART </button></div>
+                                </div>
+                            </div>
+                       
+                          </div>
+                    </div>
+
+                              <!-- modal5 -->
+                              <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content menuCardModal">
+                                        <button type="button" class="close text-right" style='color: black; text-shadow: 2px 2px 4px grey ; ' data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    <div class="menuCard card ">
+                                        <img src="4.png" class=" menuImage2" alt="Eforiro ">
+                                        <div class="menuCardBody2">
+                                            <div class='card-text text-center'> Eforiro  </div>
+                                            <div class="card-body menuCardBody3">
+                                                Delicious Traditional food Eforiro.
+                                            </div>
+                                            <div class="menuCardFooter2 mt-3">
+                                                <div>
+                                                    <p class="text-center count">
+     
+                                                    </p>
+                                                 </div>
+                                                <div> <button  class='addToCart'>Add To Cart </button></div>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                    <div class="col-md-4 mt-4 mb-4">
+                        <div class="menuCard card ">
+                            <img src="7.png" class=" menuImage" alt=" fried rice and chicken">
+                            <div class="menuCardBody">
+                                <div class='card-text ml-3'>  Fried rice and chicken </div>
+                                <div class="card-body menuCardBody2">
+                                    Delicious delicacies of fried rice and chicken.
+                                </div>
+                                <div class="menuCardFooter mt-3">
+                                    <div><p> 1200 Naria</p></div>
+                                    <div> <button data-toggle="modal" data-target="#exampleModal6" > ADD TO CART </button></div>
+                                </div>
+                            </div>
+                       
+                          </div>
+                    </div>
+
+                           <!-- modal5 -->
+                           <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content menuCardModal">
+                                    <button type="button" class="close text-right" style='color: black; text-shadow: 2px 2px 4px grey ; ' data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                <div class="menuCard card ">
+                                    <img src="7.png" class=" menuImage2" alt="  Fried rice and chicken  ">
+                                    <div class="menuCardBody2">
+                                        <div class='card-text text-center'>  Fried rice and chicken   </div>
+                                        <div class="card-body menuCardBody3">
+                                            Delicious delicacies of fried rice and chicken.
+                                        </div>
+                                        <div class="menuCardFooter2 mt-3">
+                                            <div>
+                                               <p class="text-center count">
+
+                                               </p>
+                                            </div>
+                                            <div> <button  class='addToCart'>Add To Cart </button></div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                 
+                  </div>
+                </div>
+            <div class="col-md-3 p-4 mt-4 mb-4  checkoutBox">
+                    <p class='text-center'> Delivery Foodies First   </p>
+             
+                    <div class='p-2  text-left'>
+                            Your Cart
+                    </div>
+                    <div class="cartItems">
+
+                    </div>
+                    <div class='text-center mt-2'>
+                        <button> <a href='checkout.html' style="text-decoration: none; color:black; "> CHECKOUT </a>  </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+   
+
+    </section>
+    <section class='footer'>
+        <div>  @2020 OHW </div>
+        <div class="footer2"> 
+         <div class= ' ml-3'> Home </div>       
+         <div class='ml-3 '> About </div>
+         <div class='ml-3'> Contact </div>
+     </div>
+     </section>
+     <script src='public/script.js'> </script>   
+    <script src='app.js'> </script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+</body>
+</html>
