@@ -10,16 +10,26 @@ Foodies First Website
   
 - **Home Page** : This shows the details of the website
 
-- About Page : This shows about the organization
+- **About Page** : This shows about the organization
 
-- Login / Sign Up Page : Allows User to be authenticated 
+- **Login / Sign Up Page** : Allows User to be authenticated 
 
-- Menu Page : This shows the current menus available
+- **Menu Page** : This shows the current menus available
 
-- Checkout Page : This shows the page that allows the customers to pay online.
+- **Checkout Page** : This shows the page that allows the customers to pay online.
 
 ## Team Members:
 - [Jegede Abisola](#)
+
+- [Abiola Farounbi](https://github.com/Abiola-Farounbi)
+
+- [Tunwase Ayobami](https://github.com/ayobami11)
+
+- [Abdussamad Yisau](https://github.com/AbdussamadYisau)
+
+- [Damilare Agbabiaka](https://github.com/BlankGodd)
+
+- [Roy Ayo](https://github.com/RoyAyo)
 
 
 
