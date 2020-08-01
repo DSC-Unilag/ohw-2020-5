@@ -8,7 +8,7 @@ Foodies First Website
 ## Solution: 
   We  implemented  a modern user friendly frontend design with the following features
   
-- Home Page : This shows the details of the website
+- **Home Page** : This shows the details of the website
 
 - About Page : This shows about the organization
 
@@ -19,7 +19,7 @@ Foodies First Website
 - Checkout Page : This shows the page that allows the customers to pay online.
 
 ## Team Members:
--[Jegede Abisola](#)
+- [Jegede Abisola](#)
 
 
 
