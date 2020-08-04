@@ -145,7 +145,7 @@ def register():
 
             return resp
         return render_template('register.html',data={})
-    except EOFError:
+    except:
         return render_template('500.html')
 
 @app.route("/login",methods=['GET','POST'])
