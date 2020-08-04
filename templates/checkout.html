@@ -1,0 +1,52 @@
+{% extends "template.html" %}
+
+{% block bootstrap %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- <style>
+            .location{
+                display: none;
+            }
+        </style> -->
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
+
+{% block content %}
+        </section>
+        <p>We are open on Monday,Wednesday,Friday and Saturday.<br>
+            Order must be placed 24 hours before.
+            Orders will be taken based on capacity.
+        </p>
+        <p>2000</p>
+        <form class='Form mt-5' method='POST'>
+            <div class="formInput">
+                <div class='formLabel'>Name</div>
+                <div class='formBox'> <input id="checkout-name" type='text' name="name" value="{{ data.get('username') or none }}"/></div>
+            </div>
+            <div class="formInput mt-3 mb-3">
+                <div class='formLabel'>Email Address </div>
+                <div class='formBox'> <input id="checkout-email" type='email' name="email"
+                        value="{{ data.get('email') or none }}" /></div>
+            </div>
+            <select name="delivery-method" onchange="showLocation(event)">
+                <option value="1"> Delivery </option>
+                <option value="0"> Pickup </option>
+            </select>
+            <div class="formInput mt-3 mb-3 location">
+                <div class='formLabel'>Location/Address </div>
+                <div class='formBox'> <input id="checkout-address" type='text' name="address" /></div>
+            </div>
+            <div class="formInput  mt-3 mb-3">
+                <div class='formLabel'> Method Of Payments </div>
+                <div class='formBox'> <img src='paystack.png' class='formInputBackground' /> </div>
+            </div>
+            <div class="formInput  mt-3 mb-3">
+                <div class='formLabel'></div>
+                <div class='formButton text-center' onclick="confirmPayment(event)"> Confirm Payments </div>
+            </div>
+        </form>
+        </section>
+{% endblock %}

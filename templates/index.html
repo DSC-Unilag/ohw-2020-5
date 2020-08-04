@@ -1,0 +1,165 @@
+{% extends "template.html" %}
+
+{% block title %}
+  Foodies First
+{% endblock %}
+
+{% block css %}
+    ../static/css/index.css
+{% endblock %}
+
+{% block content %}
+
+    <section class="onlineCateringContainer">
+        <div class="onlineCateringDetails">
+            <h1 class="onlineCateringHeader">FOODIES FIRST</h1>
+            <h2 class="onlineCateringSubHeader"><strong> An Online Delivery Catering Service</strong></h2>
+
+            <p class="onlineCateringParagraph"> Foodies First is a catering service that provides home-made meals at
+                affordable prices.</p>
+            <button class="onlineCateringButton"><a href="{{ url_for('order') }}" style="text-decoration:none;color:inherit;">Order Now</a>
+            </button>
+
+            <p class="onlineCateringLastParagraph"> Our Delivery services only Open from 10am - 4pm . Monday - Fridays
+            </p>
+
+            <div class="onlineCateringIcons">
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </div>
+
+        </div>
+
+        <div class="onlineCateringImg">
+            <img src="../static/assets/chickenLiesWoodenBoard.png" alt="Chicken Lies On Wooden Board">
+        </div>
+    </section>
+
+    <h2 class="tastyMealsHeader">Your tasty meals are a Click Away</h2>
+
+    <section class="tastyMeals">
+        <div>
+            <p class="tastyMealsDetails">
+                Want to Order Meals from the comfort of wherever you are then , foodies first have got you covered. Now,
+                with just the click of a button, you can order delicious home cooked meals.
+            </p>
+        </div>
+
+        <div>
+            <img src="../static/assets/bakedChickenWings.png" alt="baked chicken wings" width="595px" height="300px">
+        </div>
+    </section>
+
+    <h2 class="mostOrderedMenuHeader">Our Most Ordered Menus</h2>
+
+    <section class="mostOrderedMenu">
+
+        <div class="mostOrderedMenuCard">
+            <img src="../static/assets/mostOrderedMenu1.png" alt="fist most ordered meal" style="width:100%;">
+            <div class="mostOrderedMenuContainer">
+                <h3>Foodies First</h3>
+                <p>Turkey Carvings</p>
+            </div>
+        </div>
+
+        <div class="mostOrderedMenuCard">
+            <img src="../static/assets/mostOrderedMenu2.png" alt="fist most ordered meal" style="width:100%">
+            <div class="mostOrderedMenuContainer">
+                <h3>Foodies First</h3>
+                <p>Pancake and Scrambled eggs</p>
+            </div>
+        </div>
+
+        <div class="mostOrderedMenuCard">
+            <img src="../static/assets/mostOrderedMenu3.png" alt="fist most ordered meal" style="width:100%">
+            <div class="mostOrderedMenuContainer">
+                <h3>Foodies First</h3>
+                <p>Crispy Chicken</p>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="servicesWeProvideHeader">Services We Provide</h2>
+
+    <section class="servicesWeProvide">
+
+        <div class="services-left">
+            <img class="servicesWeProvideImg" src="../static/assets/servicesWeProvide1.png" alt="services we provide"
+                width="340px" height="322px">
+            <img class="servicesWeProvideImg2" src="../static/assets/servicesWeProvide2.png" alt="services we provide"
+                width="370px" height="288px">
+        </div>
+
+        <div class="services-right">
+            <p class="servicesWeProvideParagraph">
+                Foodies First is a catering service that provides home-made meals at affordable prices.
+                We prepare varieties of dishes on order-basis.
+                We offer meal packages including breakfast & lunch deals, bowls of soup & stew and many more.
+                Picked-up or delivered to your doorstep within Lagos.
+            </p>
+        </div>
+    </section>
+
+    <h2 class="whyChooseUsHeader">Why Choose Us? </h2>
+    <section class="whyChooseUs">
+
+        <div class="whyChooseUsOne">
+            <img src="../static/assets/whyChooseUsOne.png" alt="why choose us?" width="64px" height="64px">
+            <p class="whyChooseUsOneParagraph">We are Reliable.</p>
+        </div>
+
+        <div class="whyChooseUsOne">
+            <img src="../static/assets/whyChooseUsTwo.png" alt="why choose us?" width="64px" height="64px">
+            <p class="whyChooseUsOneParagraph"> We provide healthy Delicious meals.</p>
+        </div>
+
+        <div class="whyChooseUsOne">
+            <img src="../static/assets/whyChooseUsThree.png" alt="why choose us?" width="64px" height="64px">
+            <p class="whyChooseUsOneParagraph">Your satisfaction is important to us.</p>
+        </div>
+
+    </section>
+
+    <section class="formWrapper" id="contactUs">
+        <h2 class="formWrapperHeader">Wanna Ask Us A Question?</h2>
+
+        <form method="POST">
+            <ul class="wrapper">
+                <li class="form-row">
+                    <label for="name">Name: </label><br />
+                    <input type="text" id="name">
+                </li>
+
+                <li class="form-row">
+                    <label for="email">Email: </label><br />
+                    <input type="email" id="email">
+                </li>
+
+                <li class="form-row">
+                    <label class="messageLabel" for="message">Message: </label><br />
+                    <input class="messageInput" type="text" id="message">
+                </li>
+
+                <li class="form-row">
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+
+    </section>
+
+    <footer>
+        <div id="footer-div" class="flex flex-column bold">
+            <p>@2020 OHW</p>
+            <nav class="nav-bar flex-column">
+                <ul class="flex flex-column">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "template.html" %}
+
+{% block title %}
+Order Now
+{% endblock %}
+
+{% block css %}
+../static/css/order.css
+{% endblock %}
+
+{% block js %}
+    <script src="../static/js/order.js"></script>
+{% endblock %}
+
+
+{% block content %}
+
+    <main>
+        <section id="foods_to_order">
+            <p>Breakfast</p>
+            <section id="breakfast_order">
+            </section>
+            <p>Lunch</p>
+            <section id="lunch_order">
+            </section>
+        </section>
+        <section id="checkout">
+            
+            <center>
+                <p>Delivery Foodies First</p>
+                <p class="total">$0.00</p>
+                <div id="checkouts">
+    
+                </div>
+                <hr>
+                <div style="padding: 0.5rem;">
+                    
+                    <button class="checkout_btn" id="check_me_out">
+                        <a href="{{ url_for('checkout') }}">Checkout</a>
+                    </button>
+                    
+                </div>
+            </center>
+        </section>
+    </main>
+
+{% endblock %}

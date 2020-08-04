@@ -1,0 +1,48 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block css %}
+../static/css/sign-up.css
+{% endblock %}
+
+{% block content %}
+    <!-- Form section -->
+    <section id="sign-up-section">
+        <form action="" method="POST">
+            <div id="title-div" class="flex">
+                <img id="logo"
+                    src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png"
+                    alt="Logo">
+                <h2 id="form-title">Sign up</h2>
+            </div>
+            <div class="text-right">
+                <center>
+                    <p style="color:red;font-size:10.5pt;position:relative;top:15px;">{{ data.get("error") or "" }}</p>
+                </center>
+                <div class="form-input flex">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="username" value="{{data.get('username') or ''}}" required>
+                </div>
+                <div class="form-input flex">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="email" value="{{data.get('email') or ''}}" required>
+                </div>
+                <div class="form-input flex">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" minlength="8" required>
+                </div>
+                <div class="form-input flex">
+                    <label for="password">Confirm Password</label>
+                    <input id="password" type="password" name="confirmPassword" minlength="8" required>
+                </div>
+                <button id="submit-btn" type="submit">Sign up</button>
+            </div>
+        </form>
+        <p class="text-right">Already registered?</p>
+        <a id="sign-in" class="text-right" href="{{ url_for('login') }}">Sign in</a>
+    </section>
+
+{% endblock %}
