@@ -1,0 +1,9 @@
+flask-pymongo==2.3.0
+Flask==1.1.2
+flask-jwt-extended==3.24.1
+jsonschema
+paystackapi==2.0.0
+flask-mail==0.9.1
+gunicorn==20.0.4
+dnspython==2.0.0
+twilio==6.44.*

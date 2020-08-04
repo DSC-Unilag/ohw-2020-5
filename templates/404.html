@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404 Error</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/css/404-error.css" type="text/css">
+        <script src="../static/js/404-error.js" defer></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div id="header-div" class="flex">
+                <figure class="flex">
+                    <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png" alt="Logo">
+                    <figcaption>Foodies First</figcaption>
+                </figure>
+                <nav class="hide">
+                    <ul class="flex">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+                <a class="hide" href="{{ url_for('order') }}"><img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596125800/shopping-cart_1_1_z6whh9.png" alt="Order now"></a>
+                <a href="tel:+234801234567">
+                    <figure class="flex hide">
+                        <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596125974/phone-call_vhij6y.svg" alt="Call us">
+                        <figcaption>+234801234567</figcaption>
+                    </figure>
+                </a>
+                <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png" alt="">
+            </div>
+        </header>
+        <main>
+            <nav id="hamburger-section" class="bold">
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <section id="main-section" class="flex">
+                <img id="cloud" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596154416/rain_1_m3qp16.png" alt="">
+                <div>
+                    <p id="error-message">404 error</p>
+                    <p>Something is Wrong</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

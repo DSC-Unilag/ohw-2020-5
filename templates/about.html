@@ -1,0 +1,76 @@
+{% extends "template.html" %}
+
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block css %}
+    ../static/css/about.css
+{% endblock %}
+
+{% block content %}
+    <img id="people"
+        src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126268/group-of-people-standing-indoors-3184396_1_doxb8t.jpg"
+        alt="">
+    <!-- Introduction -->
+    <section id="who-are-we" class="company-info bold">
+        <h2>Who Are We</h2>
+        <p>We are an online catering service. We love providing home cooked meals to the satisfaction of our
+            customers.</p>
+        <p>We also love providing the best of food alongside an excellent delivery service. Whether it is
+            delivery or pickups. You can be assured that Foodies First has got you covered.</p>
+    </section>
+    <!-- Chef section -->
+    <section id="chef-section" class="flex">
+        <figure>
+            <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596125816/Rectangle_34_jr84rm.png"
+                alt="">
+        </figure>
+        <div class="flex">
+            <p>Good Food cannot be overemphasized.</p>
+        </div>
+    </section>
+    <!-- Delicacies section -->
+    <section id="delicacies-section">
+        <h2>Healthy Tasty Yummy Delicacies</h2>
+        <div id="delicacies" class="flex flex-column">
+            <div class="card flex">
+                <div class="card-title flex">
+                    <h3 class="bold">Good food is Tasty</h3>
+                </div>
+                <p>Foodies First provides mouth-watering and tasty delicacies</p>
+            </div>
+            <div class="card flex">
+                <div class="card-title flex">
+                    <h3 class="bold">Good food is Healthy</h3>
+                </div>
+                <p>Foodies First provides healthy food.</p>
+            </div>
+            <div class="card flex">
+                <div class="card-title flex">
+                    <h3 class="bold">Good food is Readily available</h3>
+                </div>
+                <p>With our excellent delivery services, Foodies First makes your orders readily available.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Company info section -->
+    <section class="company-info">
+        <p class="bold">Foodies First is a catering service that provides home-made meals at affordable prices.
+            We prerare varieties of dishes on order-basis. We offer meal packages including breakfast & lunch
+            deals, bowls of soup & stew and many more picked-up or delivered to your doorstep within Lagos.</p>
+    </section>
+    <footer>
+        <div id="footer-div" class="flex flex-column bold">
+            <p>@2020 OHW</p>
+            <nav class="nav-bar flex-column">
+                <ul class="flex flex-column">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+{% endblock %}

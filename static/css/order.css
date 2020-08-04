@@ -1,0 +1,107 @@
+/*my styling*/
+main {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    top: 200px;
+}
+
+#foods_to_order {
+    width: 70%;
+    padding: 2rem;
+}
+
+#breakfast_order {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#lunch_order {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#checkout {
+    width: 30%;
+    padding-top: 1rem;
+    box-shadow: 1px 1px 4px 2px grey;
+
+}
+
+.meal_item {
+    width: 30%;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 4px 1.2px grey;
+    border-radius: 3px;
+}
+
+
+.meal_item .price {
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+
+.meal_item .meal_name {
+    font-size: 10pt;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.meal_item .desc {
+    font-size: 10pt;
+    margin-bottom: 0.3rem;
+}
+
+.meal_item button {
+    border: 0.2px solid var(--primary-color);
+    float: right;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+
+.meal_item button::after {
+    clear: right;
+}
+
+.meal_item button:hover {
+    background-color: var(--primary-color);
+}
+
+.remove_meal_checkout{
+    float: right;
+    border: none;
+    border-radius:5px;
+    padding:0.3rem;
+    border:0.5px solid var(--primary-color)
+}
+
+@media(min-width: 851px) {
+    .meal_item img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 850px) {
+    main {
+        display: block;
+    }
+
+    #checkout {
+        width: 100%;
+    }
+
+    #foods_to_order {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .meal_item {
+        width: 100%;
+        justify-content: center;
+    }
+
+}

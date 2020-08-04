@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../static/main.css" type="text/css">
+    <link rel="stylesheet" href="{% block css %}{% endblock %}" type="text/css">
+    {% block bootstrap %}{% endblock %}
+    <script src="../static/js/menu.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="header-div" class="flex">
+            <figure class="flex">
+                <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png"
+                    alt="Logo">
+                <figcaption>Foodies First</figcaption>
+            </figure>
+            <nav class="hide">
+                <ul class="flex">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                </ul>
+            </nav>
+            {% if(logged_in) %}
+                <a id="login" class="hide bold" href="{{ url_for('logout') }}">Logout</a>
+            {% else %}
+                <a id="login" class="hide bold" href="{{ url_for('login') }}">Login</a>
+            {% endif %}
+                <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png"
+                alt="">
+        </div>
+    </header>
+    <main>
+    <nav id="hamburger-section" class="bold">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            {% if(logged_in) %}
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+        {% block content %}{% endblock %}
+    
+    </main>
+    <script src="../static/main.js"></script>
+    {% block js %}{% endblock %}
+</body>
+
+</html>

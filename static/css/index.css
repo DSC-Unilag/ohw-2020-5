@@ -1,0 +1,442 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.onlineCateringContainer {
+    margin-top: 84px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.onlineCateringDetails .onlineCateringHeader {
+    width: 200px;
+    height: 27px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.onlineCateringDetails .onlineCateringSubHeader {
+    width: 425px;
+    line-height: 36px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.onlineCateringDetails .onlineCateringParagraph {
+    width: 428px;
+    height: 48px;
+    margin-top: 20px;
+
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.onlineCateringDetails .onlineCateringButton {
+
+    background-color: rgb(255, 202, 19);
+    border: none;
+    border-radius: 2px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif !important;
+    color: #181818;
+    padding: 10px;
+    box-shadow: -1px 3px 10px -5px;
+}
+
+.onlineCateringDetails .onlineCateringLastParagraph {
+    margin-top: 70px;
+    width: 444px;
+    height: 42px;
+    padding: 17px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+
+    color: #181818;
+
+    background-color: #FFE074;
+
+
+}
+
+.onlineCateringIcons {
+    display: flex;
+}
+
+.onlineCateringIcons .fa-instagram,
+.onlineCateringIcons .fa-twitter {
+    color: #FFC600;
+    width: 24px;
+    height: 31.6px;
+    margin-right: 10px;
+}
+
+.onlineCateringDetails {
+    margin-left: 85px;
+    padding: 0px 0 50px 0;
+}
+
+.onlineCateringImg img {
+    height: 500px;
+}
+
+@media (max-width: 700px) {
+    .onlineCateringContainer {
+        display: flex;
+    }
+
+    .onlineCateringDetails {
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .onlineCateringImg img {
+        height: 300px !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .onlineCateringDetails .onlineCateringLastParagraph {
+        width: 350px;
+    }
+}
+
+.tastyMealsHeader,
+.mostOrderedMenuHeader,
+.servicesWeProvideHeader,
+.whyChooseUsHeader,
+.formWrapperHeader {
+    text-align: center;
+}
+
+
+.tastyMeals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tastyMeals div {
+    display: flex;
+    align-items: center;
+}
+
+.tastyMeals div .tastyMealsDetails {
+    width: 400px;
+    height: 168px;
+    margin-left: 81px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+@media (max-width: 700px) {
+    .tastyMeals {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tastyMeals div .tastyMealsDetails {
+        width: 400px;
+    }
+
+    .tastyMeals img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+}
+
+.mostOrderedMenu {
+    display: flex;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+.mostOrderedMenuCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 270px;
+    height: 118px;
+    text-align: center;
+    margin-right: 15px;
+
+}
+
+.mostOrderedMenuCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mostOrderedMenuContainer {
+    padding: 2px 16px 2px 16px;
+    background-color: #FFCA13;
+}
+
+.mostOrderedMenuContainer p {
+    color: #333;
+}
+
+.mostOrderedMenuCard img {
+    display: block;
+    border-radius: 5px 5px 0 0;
+
+}
+
+@media all and (max-width:700px) {
+    .mostOrderedMenu {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .mostOrderedMenuCard {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 120px;
+        margin-bottom: 70px;
+    }
+
+
+}
+
+.servicesWeProvide {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servicesWeProvide .servicesWeProvideImg {
+    margin-top: 40px;
+    position: absolute;
+    z-index: -1;
+}
+
+.servicesWeProvide .servicesWeProvideImg2 {
+    margin-left: 151px;
+    margin-top: 143px;
+}
+
+.servicesWeProvideParagraph {
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 500;
+}
+
+.services-left {
+    margin: 0 auto;
+}
+
+.services-right {
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+@media (max-width: 700px) {
+    .servicesWeProvide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicesWeProvide img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .servicesWeProvideParagraph {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .services-right {
+        width: auto;
+    }
+
+}
+
+.whyChooseUs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.whyChooseUs .whyChooseUsOne {
+    width: 250px;
+    height: 238px;
+    text-align: center;
+    background-color: #FFCA13;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 10px;
+}
+
+.whyChooseUs .whyChooseUsOne img {
+    margin-top: 50px;
+}
+
+.whyChooseUs .whyChooseUsOne .whyChooseUsOneParagraph {
+    margin-top: 35px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (max-width: 700px) {
+    .whyChooseUs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .whyChooseUs .whyChooseUsOne {
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.formWrapper {
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* height: 562px; */
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.67), rgba(255, 255, 255, 0.67)), url("../assets/formBackground.png");
+}
+
+
+
+.wrapper {
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.form-row {
+    padding: .5em;
+}
+
+.form-row>label {
+    padding: .5em 1em .5em 0;
+
+}
+
+.form-row>input {
+    width: 60%;
+}
+
+.form-row>input,
+.form-row>button {
+    padding: .5em;
+}
+
+.form-row>button {
+    background: #FFCA13;
+    color: black;
+    border: 0;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.messageInput {
+    margin-right: 20px;
+}
+
+
+/* Fix Media Queries */
+@media only screen and (max-width: 1094px) {
+    .tastyMeals {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tastyMeals div {
+        margin: 0 auto;
+    }
+
+    .tastyMealsDetails {
+        margin-left: 0px !important;
+    }
+
+    .onlineCateringDetails {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .onlineCateringContainer {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .tastyMeals img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .tastyMeals div .tastyMealsDetails {
+        width: 300px;
+    }
+
+    .onlineCateringDetails .onlineCateringParagraph {
+        width: 330px;
+        margin-bottom: 50px;
+    }
+
+    .onlineCateringDetails .onlineCateringSubHeader {
+        width: 330px;
+    }
+
+    .onlineCateringDetails .onlineCateringLastParagraph {
+        width: 85%;
+    }
+
+    .servicesWeProvide img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .servicesWeProvide .servicesWeProvideImg2 {
+        margin-left: 120px;
+        margin-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .form-row>input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .onlineCateringImg img {
+        width: 100%;
+    }
+}
