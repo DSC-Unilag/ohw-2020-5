@@ -4,13 +4,7 @@ from paystackapi.transaction import Transaction
 from paystackapi.tcontrol import TransferControl
 import json, ast
 
-try:
-    with open('../secret.txt', 'r') as sec:
-        secret = ast.literal_eval(sec.read())
-except:
-    pass
-
-paystack_secret_key = os.environ.get('PAYSTACK_SECRET_KEY') or secret['PAYSTACK_SECRET_KEY']
+paystack_secret_key = "sk_test_8ccb813635fe88d4ce488fc9c8fb576ea6db1a8e"
 paystack = Paystack(secret_key=paystack_secret_key)
 
 
@@ -34,9 +28,8 @@ def verify_transaction(reference):
     if resp['data']['status'] == "success":
         data = {
             "verify" : True,
-            "data" : resp['customer']['metadata']['cart'],
-            ""
-        }
+            "data" : resp['customer']['metadata']['cart']
+            }
         return data 
     return {
         "verify" :False

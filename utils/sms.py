@@ -1,15 +1,9 @@
 from twilio.rest import Client
 import os, ast
-
-try:
-    with open('../secret.txt', 'r') as sec:
-        secret = ast.literal_eval(sec.read())
-except:
-    pass
     
 account_sid = "AC9cc6e5bc955cd2708dd4694cf2750e63"
 
-auth_token  = os.environ.get('TWILO_AUTH_TOKEN') or secret['TWILO_AUTH_TOKEN']
+auth_token  = "b2ae9a9bd65335a84378e1246717251a"
 
 def send_text_message(message):
     
