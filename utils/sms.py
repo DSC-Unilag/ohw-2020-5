@@ -3,7 +3,7 @@ import os, ast
     
 account_sid = "AC9cc6e5bc955cd2708dd4694cf2750e63"
 
-auth_token  = "b2ae9a9bd65335a84378e1246717251a"
+auth_token  = os.environ.get("TWILO_AUTH_TOKEN")
 
 def send_text_message(message):
     

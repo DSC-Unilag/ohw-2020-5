@@ -21,14 +21,14 @@ from utils.sms import send_text_message
 app = Flask(__name__)
 jwt = JWTManager(app)
 mail = Mail(app)
-app.config['SECRET_KEY'] = "MxO\x9e\xa2[\xd3\x1e_\xaeB\x8as\x97\xf1\xaa~\x131\x9c\n\xcaq\x1d"
-app.config['JWT_SECRET_KEY'] = "\xce\x92c\xc1\x80\xf7\xd3w\x8c\x99\\\xee]\xea\xd9\r~\x13\xd2\xca#w\x08\xb7"
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY')
 app.config['JWT_TOKEN_LOCATION'] = 'cookies'
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(days=100)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 
 #initialize the db
-app.config['MONGO_URI'] = "mongodb+srv://foodies_admin:f$$diesf$rst@foodies-first.teifg.mongodb.net/foodies?retryWrites=true&w=majority"
+app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
 # app.config['MONGO_URI'] = "mongodb://localhost:27017/foodies-first"
 mongo = PyMongo(app)
 
