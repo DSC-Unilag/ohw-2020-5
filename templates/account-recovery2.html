@@ -1,0 +1,32 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Recovery
+{% endblock %}
+
+{% block css %}
+../static/css/account-recovery.css
+{% endblock %}
+
+{% block content %}
+            <!-- Account recovery section -->
+            <section class="account-recovery">
+                <form action="" method="POST">
+                    <div id="title-div" class="flex">
+                        <img id="logo" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png" alt="Logo">
+                        <h2 id="form-title">Account Recovery</h2>
+                    </div>
+                    <div class="recovery-inputs">
+                        {% if data %}
+                        <p>{{ data }}</p>
+                        {% else %}
+                        <p></p>
+                        {% endif %}
+                        <input id="email" type="email" name="email" placeholder="Enter New Password" required>
+                        <input type="password" name="password" minlength="8" placeholder="Enter New Password" required>
+                        <input type="password" name="password2" minlength="8" placeholder="Re-Enter Password" required>
+                        <button class="submit-btn" type="submit">Confirm Password</button>
+                    </div>
+                </form>
+            </section>
+{% endblock %}

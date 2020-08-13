@@ -17,24 +17,18 @@ from utils.payment import new_transaction, verify_transaction
 from utils.sms import send_text_message
 # from transactions import insert_transactions
 
-try:
-    with open('secret.txt', 'r') as sec:
-        secret = ast.literal_eval(sec.read())
-except:
-    pass
-
 #initalize the app
 app = Flask(__name__)
 jwt = JWTManager(app)
 mail = Mail(app)
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY') or secret['SECRET_KEY']
-app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY') or secret['JWT_SECRET_KEY']
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY')
 app.config['JWT_TOKEN_LOCATION'] = 'cookies'
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = datetime.timedelta(days=100)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 
 #initialize the db
-app.config['MONGO_URI'] = os.environ.get('MONGO_URI') or secret['MONGO_URI']
+app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
 # app.config['MONGO_URI'] = "mongodb://localhost:27017/foodies-first"
 mongo = PyMongo(app)
 
@@ -301,6 +295,38 @@ def my_transactions():
 @jwt.unauthorized_loader
 def unauthorized(callback):
     return redirect('/login')
+
+@app.route('/recovery', methods=['POST', 'GET'])
+def recover():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        user = users_db.find_one(email)
+        if user:
+            # send recovery token to email
+            return render_template('account_recovery3.html')
+        else:
+            # user not found
+            return render_template('404.html')
+    return render_template('account-recovery1.html')
+
+# recovery email leades to this route
+@app.route('/recovery/change_pass')
+def change_pass():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        pass1 = request.form.get('password')
+        pass2 = request.form.get('password2')
+        if pass1 != pass2:
+            data = "passwords do not match!"
+            return render_template('account-recovery2.html', data=data)
+        user = users_db.find_one(email)
+        if user:
+            # change email
+            users_db.update_one({'email':email,"$set":{"password":password}})
+            return render_template('account-recovery4.html')
+        else:
+            return render_template('404.html')
+    return render_template('account-recovery2.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

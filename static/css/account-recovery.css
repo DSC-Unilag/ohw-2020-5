@@ -1,0 +1,154 @@
+/* General styles */
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main section */
+main {
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* Account recovery section */
+.account-recovery {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    height: 400px;
+    max-width: 700px;
+    width: 70%;
+    padding: 2em;
+}
+
+#title-div {
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    max-width: 350px;
+    width: 60%;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+/* For the completed (success) pages */
+.completed {
+    line-height: 3;
+    text-align: center;
+}
+
+#completed-img {
+    margin-top: 1em;
+    height: 78px;
+    width: 78px;
+}
+
+#sign-in {
+    color: #5C5C5C;
+    display: block;
+    text-decoration: none;
+}
+
+#sign-in:hover {
+    text-decoration: underline;
+}
+
+/* For the form pages */
+.recovery-inputs {
+    text-align: center;
+}
+
+.recovery-inputs input {
+    background-color: #ffffff;
+    border: 1.5px solid #000000;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+    color: #5c5c5c;
+    font-size: 1rem;
+    margin: 1.5em 0;
+    outline: none;
+    padding: 0.5em;
+    width: 331px;
+}
+
+.recovery-inputs.email div {
+    align-items: center;
+    flex-direction: column;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+    outline: none; 
+    padding: 1em;
+    width: 331px;
+}
+
+.submit-btn:hover {
+    background-color: #000000;
+    color: var(--primary-color);
+}
+
+/* Media queries for the completed (success) pages */
+@media (max-width: 900px) {
+    .account-recovery {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .account-recovery {
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .account-recovery {
+        height: 280px;
+    }
+
+    #title-div {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #form-title {
+        margin-left: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    .completed {
+        line-height: 1.5;
+    }
+
+    #completed-img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* Media queries for the form pages */
+@media (max-width: 700px) {
+   .form-page .account-recovery {
+        height: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .account-recovery {
+        padding: 2em 1em;
+    }
+
+    .recovery-inputs input,
+    .submit-btn {
+        width: 100%;
+    }
+}

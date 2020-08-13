@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Recovery
+{% endblock %}
+
+{% block css %}
+../static/css/account-recovery.css
+{% endblock %}
+
+{% block content %}
+            <!-- Account recovery section -->
+            <section class="account-recovery">
+                <div id="title-div" class="flex">
+                    <img id="logo" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png" alt="Logo">
+                    <h2 id="form-title">Account Recovery</h2>
+                </div>
+                <div class="completed">
+                    <p>Password Reset Confirmed.</p>
+                    <img id="completed-img" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596142811/Vector_1_cs9bea.png" alt="Confirmed">
+                    <a href="../login/login.html" id="sign-in">Sign in</a>
+                </div>
+            </section>
+{% endblock %}
