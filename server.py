@@ -296,5 +296,37 @@ def my_transactions():
 def unauthorized(callback):
     return redirect('/login')
 
+@app.route('/recovery', methods=['POST', 'GET'])
+def recover():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        user = users_db.find_one(email)
+        if user:
+            # send recovery token to email
+            return render_template('account_recovery3.html')
+        else:
+            # user not found
+            return render_template('404.html')
+    return render_template('account-recovery1.html')
+
+# recovery email leades to this route
+@app.route('/recovery/change_pass')
+def change_pass():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        pass1 = request.form.get('password')
+        pass2 = request.form.get('password2')
+        if pass1 != pass2:
+            data = "passwords do not match!"
+            return render_template('account-recovery2.html', data=data)
+        user = users_db.find_one(email)
+        if user:
+            # change email
+            users_db.update_one({'email':email,"$set":{"password":password}})
+            return render_template('account-recovery4.html')
+        else:
+            return render_template('404.html')
+    return render_template('account-recovery2.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

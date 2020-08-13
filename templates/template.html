@@ -30,6 +30,8 @@
                     <li><a href="{{ url_for('about') }}">About</a></li>
                 </ul>
             </nav>
+            <a class="flex" href="#" title="Order Now"><img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596125800/shopping-cart_1_1_z6whh9.png" 
+                alt="Cart"></a>
             {% if(logged_in) %}
                 <a id="login" class="hide bold" href="{{ url_for('logout') }}">Logout</a>
             {% else %}
