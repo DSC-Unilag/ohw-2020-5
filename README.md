@@ -3,7 +3,9 @@ Open Hack Week -Group 5
 Foodies First Website
 ==========================
 ## Description : 
-  Foodies First is a catering service that provides home-made meals at affordable prices. We prepare varieties of dishes on order-basis. We offer meal packages including breakfast & lunch deals, bowls of soup & stew and many more Picked-up or delivered to your doorstep within Lagos.
+  [Foodies First](https://foodies-first-gnc.herokuapp.com) is a catering service that provides home-made meals at affordable prices. We prepare varieties of dishes on order-basis. We offer meal packages including breakfast & lunch deals, bowls of soup & stew and many more Picked-up or delivered to your doorstep within Lagos.
+  
+  Link to the hosted site: https://foodies-first-gnc.herokuapp.com
 
 ## Solution: 
   We  implemented  a modern user friendly frontend design with the following features
