@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=" stylesheet" href='style.css'>
+    <link rel='stylesheet' href='public/style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+         <!-- Header -->
+         <header>
+            <div id="header-div" class="flex">
+                <figure class="flex">
+                    <img src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596126338/Screenshot_20200728-234326_1_rvxqme.png" alt="Logo">
+                    <figcaption>Foodies First</figcaption>
+                </figure>
+                <nav class="hide">
+                    <ul class="flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <a id="login" class="hide bold" href="../login/login.html">Login</a>
+                <img id="hamburger" src="https://res.cloudinary.com/dizrb3vql/image/upload/v1596145703/Group_twsno9.png" alt="">
+            </div>
+        </header>
+        <!-- Main content -->
+        <main>
+            <nav id="hamburger-section" class="bold">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+    <section class='sub-navmenu'>
+   <div class="container">
+       Menus
+   </div>
+    </section>
+    <section class='checkoutForm mt-4 ml-4 '>
+        <p>We are open on Monday,Wednesday,Friday and Saturday.<br>
+            Order must be placed 24 hours before. 
+            Orders will be taken based on capacity.
+        </p>
+        <form class='Form mt-5' method='POST'>
+            <div class="formInput">
+                <div class='formLabel'>Name</div> 
+                <div class='formBox'> <input type='text'  /></div>
+            </div>
+            <div class="formInput mt-3 mb-3">
+                <div class='formLabel'>Email Address </div>
+                <div class='formBox'> <input type='email'  /></div>
+            </div>
+            <div class="formInput  mt-3 mb-3">
+                <div class='formLabel'> Phone Number </div>
+                <div class='formBox'> <input type='text'  /></div>
+            </div>
+            <div class="formInput  mt-3 mb-3">
+                <div class='formLabel'> Pick Up Day </div>
+                <div class='formBox'> <input type='date'  placeholder="mm/dd/yyy" /></div>
+            </div>
+            <div class="formInput  mt-3 mb-3">
+                <div class='formLabel'> Time </div>
+                <div class='formBox'> <input type='Text' /></div>
+            </div>
+            <div class="formInput  mt-3 mb-3">
+                <div class='formLabel'> Method Of Payments </div>
+                <div class='formBox'> <img src='paystack.png' class='formInputBackground'/> </div>
+            </div>
+            <div class="formInput  mt-3 mb-3">
+                <div class='formLabel' ></div>
+                <div class='formButton text-center'> Confirm Payments </div>
+            </div>
+        </form>
+    </section>
+    <section class='footer'>
+       <div>  @2020 OHW </div>
+       <div class="footer2"> 
+        <div class= ' ml-3'> Home </div>       
+        <div class='ml-3 '> About </div>
+        <div class='ml-3'> Contact </div>
+    </div>
+    </section>
+ <script src='public/script.js'> </script>   
+</body>
+</html>
